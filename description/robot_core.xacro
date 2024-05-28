@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+   <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
     <xacro:include filename="inertial_macros.xacro"/>
@@ -24,23 +24,21 @@
         <color rgba="1 0 0 1" />
     </material>
 
-    <!-- BASE LINK -->
-
+    <!BASE LINK -->
     <link name="base_link">
 
     </link>
 
     <!-- BASE FOOTPRINT LINK -->
 
-    <joint name="base_footprint_joint" type="fixed">
+   <joint name="base_footprint_joint" type="fixed">
         <parent link="base_link"/>
-        <child link="base_link"/>
+        <child link="base_footprint"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
 
     <link name="base_footprint">
     </link>
-
 
     <!-- CHASSIS LINK-->
 
@@ -171,5 +169,4 @@
     </gazebo>
 
 
-
-</robot>
+</robot>   -->  
